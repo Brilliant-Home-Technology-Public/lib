@@ -1,0 +1,152 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.autopep8]
+exclude = "env,thrift_types"
+indent-size = 2
+max-line-length = 100
+# E101: Enforce a consistent top-level indentation.
+# E112: Enforce an expected indentation block.
+# E113: Fix unexpected indentation.
+# E115: Enforce expected indentation blocks for comments.
+# E116: Fix unexpected indentation for comments.
+# E117: Fix over indentation.
+# E121: Enforce four spaces for the initial hanging indent.
+# E122: Enforce four spaces for the subsequent lines in the hanging indentation block.
+# E123: Enforce that a closing bracket matches the indentation of the opening bracket's line.
+# E126: Fix over-indented hanging indentation.
+# E131: Enforce that a continuation line is aligned with the hanging indentation.
+# E133: Enforce proper indentation for closing brackets.
+# E2:   Enforcing all whitespace rules.
+# E201: Remove whitespace after an opening parenthesis, curly brace, or bracket.
+# E202: Remove whitespace before a closing parenthesis, curly brace, or bracket.
+# E203: Remove whitespace before colons, commas, and semicolons.
+# E211: Remove extra whitespace before an opening parenthesis.
+# E221: Remove extra whitespace before an operator.
+# E222: Remove extra whitespace after an operator.
+# E223: Remove tabs before an operator.
+# E224: Remove tabs after an operator.
+# E225: Enforce whitespace around operators.
+# E226: Enforce whitespace around arithmetic operators.
+# E227: Enforce whitespace around bitwise and shift operators.
+# E228: Enforce whitespace around modulo operators.
+# E231: Enforce whitespace after colons, commas, and semicolons.
+# E241: Remove multiple spaces after colons, commas, and semicolons.
+# E242: Remove tabs after colons, commas, and semicolons.
+# E251: Remove extra whitespace around the equals sign with keyword arguments.
+# E261: Enforce two spaces before an inline comment.
+# E262: Ensure inline comments start with a # sign and one space.
+# E265: Ensure block comments start with a # sign and one space.
+# E266: Remove extra leading #s for block comments.
+# E271: Remove extra spaces after a keyword.
+# E272: Remove extra spaces before a keyword.
+# E273: Remove extra tabs after a keyword.
+# E274: Remove extra tabs before a keyword.
+# E275: Ensure that there is whitespace after a keyword.
+# E3:   Enforcing all blank line rules.
+# E301: Add missing blank lines.
+# E302: Add missing 2 blank lines between top-level classes and functions.
+# E303: Remove extra blank lines.
+# E304: Remove blank lines found after function decorators.
+# E305: Add missing 2 blank lines after top-level classes and functions.
+# E306: Add missing blank line before a nested definition.
+# E4:   Import rules are enforced by isort.
+# E5:   Enforcing all line length rules.
+# E501: Fix lines over 100 characters long.
+# E502: Remove backslashes between brackets.
+select = "E101,E112,E113,E115,E116,E117,E121,E122,E123,E126,E131,E133,E201,E202,E203,E211,E221,E222,E223,E224,E225,E226,E227,E228,E231,E241,E242,E251,E261,E262,E265,E266,E271,E272,E273,E274,E275,E301,E302,E303,E304,E305,E306,E501,E502"
+
+[project]
+name = "lib"
+version = "1.0.0"
+description = "Lib"
+readme = "README.md"
+maintainers = [
+    {name = "Brilliant", email = "sweng@brilliant.tech"},
+]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+]
+dependencies = [
+    "python-gflags",
+    "six",  # Required by gflags, but not transitively detected.
+    "thrift-types",
+]
+
+[project.urls]
+Homepage = "https://github.com/ramjet-labs/lib"
+
+[project.optional-dependencies]
+alexa = [
+    "aiohttp",
+]
+bluetooth = [
+    "bitstring",
+    "cryptography",
+    "wrapt",
+]
+clients = [
+    "PyJWT",
+    "aiohttp",
+    "multidict",
+    "ulid-py",
+]
+crypto = [
+    "cryptography",
+]
+dbus = [
+    "pydbus",
+]
+dev = []
+email = [
+    "email-validator",
+]
+jwt = [
+    "PyJWT",
+]
+message_bus_api = [
+    "ulid-py",
+]
+networking = [
+    "aiohttp",
+    "autobahn",
+    "certifi",
+    "netifaces",
+    "wrapt",
+]
+storage = [
+    "aiohttp",
+    "certifi",
+    "multidict",
+    "netifaces",
+]
+ulid = [
+    "ulid-py",
+]
+uvloop = [
+    "uvloop",
+]
+uwsgi = [
+    "uwsgi",
+]
+all = [
+    "PyJWT",
+    "aiohttp",
+    "autobahn",
+    "bitstring",
+    "certifi",
+    "cryptography",
+    "email-validator",
+    "multidict",
+    "netifaces",
+    "pydbus",
+    "ulid-py",
+    "uvloop",
+    "uwsgi",
+    "wrapt",
+]

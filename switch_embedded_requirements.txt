@@ -1,0 +1,69 @@
+# NOTE: The Python version less than "3.11” marker is a hack to get around a limitation of
+# Dependabot. We don't want to automatically update the switch-embedded dependencies at this time,
+# but there is no way to tell Dependabot to ignore this file as a whole. Dependabot currently
+# ignores any dependencies with a less than sign. So we use that as a way to prevent these
+# depepdencies from being updated.
+
+aiofiles==0.8.0;python_version<'3.11'
+aiohttp==3.8.3+brl1;python_version<'3.11'
+autobahn==20.7.1;python_version<'3.11'
+autopep8==2.0.0;python_version<'3.11'
+bitstring==3.1.5;python_version<'3.11'
+certifi==2017.11.5;python_version<'3.11'
+coverage==5.5;python_version<'3.11'
+cryptography==38.0.1;python_version<'3.11'
+email-validator==1.0.3;python_version<'3.11'
+importlib-resources==1.0.2;python_version<'3.11'
+multidict==5.2.0;python_version<'3.11'
+mypy==1.6.1;python_version<'3.11'
+netifaces==0.10.4;python_version<'3.11'
+pydbus==0.6.0+brl0;python_version<'3.11'
+PyJWT==1.7.1;python_version<'3.11'
+pylint==2.15.6;python_version<'3.11'
+pytest-cov==2.12.1;python_version<'3.11'
+pytest-xdist==2.3.0;python_version<'3.11'
+pytest==6.2.5;python_version<'3.11'
+python-gflags==2.0;python_version<'3.11'
+python-pkcs11==0.7.0;python_version<'3.11'
+sentry-sdk==1.5.11;python_version<'3.11'
+thrift==1.0.0+brl3;python_version<'3.11'
+ulid-py==0.0.6;python_version<'3.11'
+uvloop==0.16.0+brl0;python_version<'3.11'
+uwsgi==2.1+brl1;python_version<'3.11'
+wrapt==1.11.0;python_version<'3.11'
+
+# Indirect dependencies
+apipkg==2.0.0;python_version<'3.11'                  # From pytest-xdist
+asn1crypto==1.5.1;python_version<'3.11'              # From cryptography
+astroid==2.12.13;python_version<'3.11'               # From pylint
+async-timeout==4.0.1;python_version<'3.11'           # From aiohttp
+atomicwrites==1.4.0;python_version<'3.11'            # From pytest-xdist
+attrs==21.2.0;python_version<'3.11'                  # From pytest
+cached-property==1.5.2;python_version<'3.11'         # From python-pkcs11
+cffi==1.15.1;python_version<'3.11'                   # From cryptography
+chardet==3.0.4;python_version<'3.11'                 # From aiohttp
+dnspython==1.15.0;python_version<'3.11'              # From email-validator
+execnet==1.9.0;python_version<'3.11'                 # From pytest-xdist
+frozenlist==1.3.1;python_version<'3.11'              # From aiohttp
+idna==2.8;python_version<'3.11'                      # From cryptography, email-validator
+idna-ssl==1.1.0;python_version<'3.11'                # From aiohttp
+isort==5.10.1;python_version<'3.11'                  # From pylint
+lazy-object-proxy==1.4.3;python_version<'3.11'       # From pylint
+mccabe==0.6.1;python_version<'3.11'                  # From pylint
+more-itertools==8.10.0;python_version<'3.11'         # From pytest-cov
+pathlib2==2.3.6;python_version<'3.11'                # From pytest-xdist
+pluggy==1.0.0;python_version<'3.11'                  # From pytest
+py==1.10.0;python_version<'3.11'                     # From pytest
+pycparser==2.19;python_version<'3.11'                # From cffi
+pycodestyle==2.10.0;python_version<'3.11'             # From autopep8
+pytest-forked==1.3.0;python_version<'3.11'           # From pytest-xdist
+six==1.16.0;python_version<'3.11'                    # From autobahn
+tomli==2.0.1;python_version<'3.11'                   # From mypy
+txaio==20.4.1;python_version<'3.11'                  # From autobahn
+typing-extensions==4.4.0;python_version<'3.11'       # From aiohttp, pylint->astroid
+urllib3==1.26.9;python_version<'3.11'                # From sentry-sdk
+yarl==1.6.2;python_version<'3.11'                    # From aiohttp
+
+# Type stubs
+types-aiofiles==0.8.0;python_version<'3.11'
+types-python-gflags==3.1.0;python_version<'3.11'    # Not the correct version but it works fine

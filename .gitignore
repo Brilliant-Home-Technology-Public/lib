@@ -1,0 +1,26 @@
+*.pyc
+.DS_Store
+.envrc
+*~
+__pycache__
+certs/*.srl
+
+# Wheel build directories
+build
+dist
+env
+src/*.egg-info
+
+# Ignore some emacs temporary files
+*~
+\#*\#
+.\#*
+
+# Ignore some vi temporary files
+*.swp
+
+# Native extensions
+*.cpython-35m*.so
+
+# pytest
+.pytest_cache/

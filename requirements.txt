@@ -1,0 +1,67 @@
+aiofiles==23.2.1
+aiohttp==3.8.6
+autobahn==23.6.2
+autopep8==2.0.4
+bitstring==3.1.9
+certifi==2024.2.2
+coverage==7.5.0
+cryptography==39.0.2
+email-validator==2.0.0.post2
+multidict==6.0.5
+mypy==1.6.1
+netifaces==0.11.0
+pydbus==0.6.0
+PyJWT==1.7.1
+pylint==2.15.10
+pytest-cov==4.1.0
+pytest-xdist==3.5.0
+pytest==8.2.0
+python-gflags==3.1.2
+python-pkcs11==0.7.0
+sentry-sdk==1.41.0
+thrift===1.0.0+brl3
+ulid-py==0.2.0
+uvloop==0.19.0
+uwsgi==2.0.24
+wrapt==1.16.0
+
+# Indirect dependencies
+apipkg==3.0.2                    # From pytest-xdist
+asn1crypto==1.5.1              # From python-pkcs11
+astroid==2.13.3                 # From pylint
+async-timeout==4.0.3           # From aiohttp
+atomicwrites==1.4.1            # From pytest-xdist
+attrs==23.2.0                  # From aiohttp, pytest
+cached-property==1.5.2         # From python-pkcs11
+cffi==1.16.0                   # From cryptography
+chardet==5.2.0                 # From aiohttp
+dill==0.3.8  # From pylint
+dnspython==2.6.1              # From email-validator
+execnet==2.1.1                 # From pytest-xdist
+idna==3.7                      # From email-validator, yarl
+importlib-metadata==7.0.1       # From pytest->pluggy
+isort==5.13.2                  # From pylint
+lazy-object-proxy==1.10.0       # From pylint
+mccabe==0.7.0                  # From pylint
+more-itertools==10.2.0          # From pytest-cov
+packaging==24.0                # From pytest
+pathlib2==2.3.7.post1                # From pytest-xdist
+platformdirs==4.2.1  # From pylint
+pluggy==1.5.0                 # From pytest
+py==1.11.0                      # From pytest
+pycodestyle==2.11.1             # From autopep8
+pycparser==2.21                # From cffi
+pyparsing==3.1.2               # From pytest->packaging
+pytest-forked==1.6.0           # From pytest-xdist
+six==1.16.0                    # From autobahn
+tomli==2.0.1                   # From mypy
+txaio==23.1.1                  # From autobahn
+typed-ast==1.5.5               # From pylint->astroid
+typing-extensions==4.11.0  # From pylint->astroid
+urllib3==2.2.0                # From sentry-sdk
+wcwidth==0.2.13                 # From pytest
+zipp==3.17.0                    # From pytest->pluggy->importlib-metadata
+
+# Type stubs
+types-aiofiles==0.8.0
+types-python-gflags==3.1.0    # Not the correct version but it works fine
